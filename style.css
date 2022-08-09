@@ -3,7 +3,7 @@
   }
   
   body {
-    background: #0C4160;
+    background: black;
   }
   
   nav{
@@ -17,7 +17,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: #071330;
+    background: black;
   }
   
   .nav-list {
@@ -33,7 +33,7 @@
     display: list-item;
     padding: 14px 20px 14px 20px;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
   }
   
   a {
@@ -41,6 +41,64 @@
     color: #C3CEDA;
   }
   
+  
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+
+  #scrollPath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  #progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
+  }
+
+  @keyframes animate {
+    0%, 100% {
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  
+  #progressbar:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+  }
+
+  #progressbar:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+  }
+
+/* End scrollbar */
+
   section {
     display: flex;
     flex-direction: column;
@@ -48,7 +106,8 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: #0C4160;
+    background: black;
+    color: #C3CEDA;
   }
   
   #about {
@@ -67,7 +126,9 @@
 
   h2 {
     font-size: 45px;
+    font-family: 'Roboto', sans-serif;
     padding-bottom: 320px;
+    color: #071330;
   }
   
   p {
@@ -78,7 +139,7 @@
 
   #projects {
     display: flex;
-    background: #738FA7;
+    background: black;
   }
 
   .projects-grid {
@@ -92,6 +153,11 @@
     padding-left: 15%;
   }
   
+  .project-text {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+
   @media {
     
   }

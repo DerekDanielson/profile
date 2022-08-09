@@ -25,6 +25,10 @@
         </li>
       </ul>
     </nav>
+
+    <!--Scrollbar-->
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
   
     <!--About section-->
     <img src="C:\Users\musta\Desktop\DevDerek\shrek.jpeg" alt="Pic of Derek">
@@ -38,22 +42,22 @@
       <h2>Projects</h2>
       <div class="projects-grid">
         <a class="project-tile" href="file:///C:/Users/musta/Desktop/APAProject/APAPage/Home.html" target="_blank">
-          <img src="C:\Users\musta\Desktop\DevDerek\images\APA.png"alt="APA icon">Commissioned work</a>
+          <img src="C:\Users\musta\Desktop\DevDerek\images\APA.png"alt="APA icon"><span class="project-text">Commissioned work</span></a>
 
         <a class="project-tile" href="https://derekdanielson.github.io/Connect4/" target="_blank">
-          <img src="C:\Users\musta\Desktop\DevDerek\images\connect4.png"alt="connect4 icon">Connect 4</a>
+          <img src="C:\Users\musta\Desktop\DevDerek\images\connect4.png"alt="connect4 icon"><span class="project-text">Connect 4</span></a>
 
         <a class="project-tile" href="C:\Users\musta\Desktop\DevDerek\projects\penguin\index.html" target="_blank">
-          <img src="C:\Users\musta\Desktop\DevDerek\images\penguin.png"alt="penguin icon">Penguin</a>
+          <img src="C:\Users\musta\Desktop\DevDerek\images\penguin.png"alt="penguin icon"><span class="project-text">Penguin</span></a>
         
         <a class="project-tile" href="https://derekdanielson.github.io/Memory-Game/" target="_blank">
-          <img src="C:\Users\musta\Desktop\DevDerek\images\memory.png"alt="memory icon">Memory Game</a>
+          <img src="C:\Users\musta\Desktop\DevDerek\images\memory.png"alt="memory icon"><span class="project-text">Memory Game</span></a>
 
         <a class="project-tile" href="https://derekdanielson.github.io/NeonSnakeButtons/" target="_blank">
-          <img src="C:\Users\musta\Desktop\DevDerek\images\neonbuttons.png"alt="neon-button icon">Neon Animated Buttons</a>
+          <img src="C:\Users\musta\Desktop\DevDerek\images\neonbuttons.png"alt="neon-button icon"><span class="project-text">Neon Animated Buttons</span></a>
       
         <a class="project-tile" href="https://codepen.io/mach109/pen/LYpQdbL" target="_blank"> <!--Link to Meme Maker!-->
-          <img src="C:\Users\musta\Desktop\DevDerek\images\meme.png"alt="meme-maker icon">Meme Maker</a>    
+          <img src="C:\Users\musta\Desktop\DevDerek\images\meme.png"alt="meme-maker icon"><span class="project-text">Meme Maker</span></a>    
       </div>
     </section>
 
@@ -62,5 +66,14 @@
       <a id="profile-link" target="_blank"></a>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
     </section>
+    <script type="text/javascript">
+      let progress = document.getElementById('progressbar');
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+      }
+
+    </script>
   </body>
 </html>
