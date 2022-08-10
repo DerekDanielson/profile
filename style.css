@@ -3,7 +3,7 @@
   }
   
   body {
-    background: black;
+    background: #0C4160;
   }
   
   nav{
@@ -17,7 +17,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: black;
+    background: #071330;
   }
   
   .nav-list {
@@ -106,7 +106,7 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: black;
+    background: #0C4160;
     color: #C3CEDA;
   }
   
@@ -139,7 +139,7 @@
 
   #projects {
     display: flex;
-    background: black;
+    background: #738FA7;
   }
 
   .projects-grid {
@@ -154,7 +154,7 @@
   }
   
   .project-text {
-    color: white;
+    color: #071330;
     font-family: 'Roboto', sans-serif;
   }
 
