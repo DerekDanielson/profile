@@ -40,9 +40,9 @@
     text-decoration: none;
     color: #C3CEDA;
   }
+  /*#F2EEE4*/
   
-  
-  /* Scrollbar */
+  /* Scrollbar -- Copy in another doc and delete from here
   ::-webkit-scrollbar {
     width: 0;
   }
@@ -97,7 +97,7 @@
     filter: blur(10px);
   }
 
-/* End scrollbar */
+ End scrollbar */
 
   section {
     display: flex;
@@ -127,7 +127,8 @@
   h2 {
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 320px;
+    padding-top: 160px;
+    padding-bottom: 260px;
     color: #071330;
   }
   
@@ -152,6 +153,14 @@
     margin-bottom: 6rem;
     padding-left: 15%;
   }
+
+  .project-tile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    
+    }
   
   .project-text {
     color: #071330;
