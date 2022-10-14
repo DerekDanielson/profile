@@ -25,9 +25,9 @@ ul {
   
 li {
     display: list-item;
-    padding: 14px 20px 14px 20px;
+    padding: 1rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 a {
@@ -64,22 +64,27 @@ p {
 }
 
 #project-grid {
+    background-color: red;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 60%;
     width: 100%;
-    margin-top: 250px;
-    margin-right: 180px;
+    margin-top: 10rem;
+    margin-left: -15rem;
+    padding-right: 12rem;
+    padding-bottom: 4rem;
 }
 
 .project-box {
-    color: #C3CEDA;
+    color: black;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
+    padding-left: 40%;
+    padding-right: 40%;
     margin-left: 25%;
 }
 
@@ -90,9 +95,10 @@ p {
 }
 
 h2 {
-    color: #C3CEDA;
-    padding-top: 10%;
-    padding-left: 5%;
+    color: black;
+    margin-top: -22rem;
+    margin-left: 8rem;
+    font-size: 2rem;
 }
 
 #contact {
