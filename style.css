@@ -2,6 +2,7 @@ body {
     border: none;
     margin: 0;
     background: #0C4160; 
+    overflow: hidden;
 }
 
 #navbar {
@@ -35,9 +36,11 @@ a {
     color: #C3CEDA;
 }
 
-p {
+#aboutPara {
+    display: flex;
     padding-left: 30%;
     padding-right: 30%;
+    font-family: 'Roboto', sans-serif;
 }
 
 #about {
@@ -54,8 +57,8 @@ p {
 #projects {
     background: #738FA7;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
     height: 100vh;
     border: none;
@@ -63,16 +66,20 @@ p {
     padding: 0;
 }
 
+hr {
+    background-color: black;
+}
+
 #project-grid {
-    background-color: red;
     display:flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 60%;
     width: 100%;
-    margin-top: 10rem;
-    margin-left: -15rem;
+    margin-top: 18rem;
+    margin-left: -16rem;
     padding-right: 12rem;
     padding-bottom: 4rem;
 }
@@ -81,11 +88,11 @@ p {
     color: black;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-left: 40%;
-    padding-right: 40%;
-    margin-left: 25%;
+    margin-top: 2rem;
+    margin-left: 10%;
 }
 
 .row img {
@@ -96,15 +103,21 @@ p {
 
 h2 {
     color: black;
-    margin-top: -22rem;
+    margin-top: 8rem;
     margin-left: 8rem;
     font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.projectPara {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
 }
 
 #contact {
     background: #0C4160;    
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     justify-content: center;
     align-items: center;
     width: 100%;
